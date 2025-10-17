@@ -1333,7 +1333,7 @@ Window = Fluent:CreateWindow({
     Theme = "Dark",
     MinimizeKey = Enum.KeyCode.LeftControl 
 })
-Shop = Window:AddTab({ Title = "Tab Shop", Icon = "" })
+Shop = Window:AddTab({ Title = "Tab Shop", Icon = "shopping-bag" })
 sex = {
     "WildDares",
     "BossBuild",
@@ -1601,7 +1601,7 @@ Shop:AddButton({
         end
     end
 })
-Server = Window:AddTab({ Title = "Tab Status And Server", Icon = "" })
+Server = Window:AddTab({ Title = "Tab Status And Server", Icon = "loader" })
 Time = Server:AddParagraph({
     Title = "Time Zone",
     Content = ""
@@ -2410,7 +2410,7 @@ Toggle:OnChanged(function(Value)
         until not getgenv().TeleportIsland
     end
 end)
-Settings = Window:AddTab({ Title = "Setting Farm", Icon = "Settings" })
+Settings = Window:AddTab({ Title = "Setting Farm", Icon = "sliders" })
 Dropdown = Settings:AddDropdown("DropdownFarm", {
     Title = "Select Weapon",
     Values = {"Melee","Sword","Blox Fruit"},
@@ -4880,7 +4880,7 @@ spawn(function()
         end
     end
 end)
-Blog = Window:AddTab({ Title = "Tab Fruit And Raid", Icon = "Fruits" })
+Blog = Window:AddTab({ Title = "Tab Fruit And Raid", Icon = "apple" })
 Toggle = Blog:AddToggle("Toggle", {Title = "Random Devil Fruit", Default = false })
 Toggle:OnChanged(function(Value)
     getgenv().RandomFruit = Value
@@ -5184,7 +5184,7 @@ Blog:AddButton({
     end
 })
 end
-Sea = Window:AddTab({ Title = "Tab Sea Event", Icon = "fish" })
+Sea = Window:AddTab({ Title = "Tab Sea Event", Icon = "anchor" })
 SetSpeedBoatSlider = Sea:AddSlider("SliderSpeedBoat", {
 	Title = "Ship Speed",
 	Default = 300,
@@ -6520,7 +6520,7 @@ Toggle = Volcanic:AddToggle("Toggle", {
 Toggle:OnChanged(function(v404)
     getgenv().UseGun = v404
 end)
-Race = Window:AddTab({ Title = "Tab Upgrade Race", Icon = "Race" })
+Race = Window:AddTab({ Title = "Tab Upgrade Race", Icon = "flag" })
 Race:AddParagraph({
     Title = "Race Draco",
     Content = string.rep("-", 21)
@@ -7134,7 +7134,7 @@ spawn(function()
         end
     end
 end)
-Get = Window:AddTab({ Title = "Tab Get Items And Buy", Icon = "items" })
+Get = Window:AddTab({ Title = "Tab Get Items And Buy", Icon = "sword" })
 Toggle = Get:AddToggle("Toggle", {Title = "Auto Trade Bone", Default = false})
 Toggle:OnChanged(function(Value)
     getgenv().AutoTradeBone = Value
@@ -7830,7 +7830,7 @@ Toggle:OnChanged(function(Value)
         end
     end
 end)
-PVP = Window:AddTab({ Title = "Tab PVP", Icon = "PVP" })
+PVP = Window:AddTab({ Title = "Tab PVP", Icon = "shield" })
 local Playerslist = {}
 for i, player in ipairs(game.Players:GetPlayers()) do
     Playerslist[i] = player.Name
@@ -8064,7 +8064,7 @@ ImageLabel.AnchorPoint = Vector2.new(0.5, 0.5)
 ImageLabel.Position = UDim2.new(0.103761353, 0, 0.214939028, 0)
 ImageLabel.Size = UDim2.new(0, 57, 0, 57)
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel.BackgroundTransparency = 0
+ImageLabel.BackgroundTransparency = 2
 ImageLabel.BorderSizePixel = 0
 ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ImageLabel.ImageColor3 = Color3.fromRGB(255, 255, 255)
