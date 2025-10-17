@@ -1949,7 +1949,7 @@ function Hop()
     end
     Teleport()
 end
-LGa = Window:AddTab({ Title = "Tab Local Player", Icon = "" })
+LGa = Window:AddTab({ Title = "Tab Local Player", Icon = "shield" })
 LGa:AddButton({
     Title = "Stop Tween",
     Callback = function()
@@ -3419,7 +3419,7 @@ Toggle = Main:AddToggle("Toggle", {Title = "Skill F", Default = false })
 Toggle:OnChanged(function(Value)
     getgenv().SkillF = Value
 end)
-Stack = Window:AddTab({ Title = "Tab Stack Farm", Icon = "Start" })
+Stack = Window:AddTab({ Title = "Tab Stack Farm", Icon = "loader" })
 Dropdown = Stack:AddDropdown("DropdownFarm", {
     Title = "Select Melee",
     Values = {"Superhuman", "DeathStep", "Sharkman Karate", "Electric Claw", "Dragon Talon", "GodHuman"},
@@ -8075,14 +8075,14 @@ UICorner.Parent = Frame
 
 TextButton.Name = "TextButton"
 TextButton.Parent = Frame
-TextButton.AnchorPoint = Vector2.new(0, 0)
+TextButton.AnchorPoint = Vector3.new(0, 0)
 TextButton.Position = UDim2.new(0, 0, 0, 0)
-TextButton.Size = UDim2.new(1, 0, 1, 0)
+TextButton.Size = UDim2.new(57, 0, 57, 0)
 TextButton.BackgroundColor3 = Color3.fromRGB(163, 162, 165)
-TextButton.BackgroundTransparency = 1
-TextButton.BorderSizePixel = 1
-TextButton.BorderColor3 = Color3.fromRGB(27, 42, 53)
-TextButton.TextColor3 = Color3.fromRGB(27, 42, 53)
+TextButton.BackgroundTransparency = 0
+TextButton.BorderSizePixel = 0
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.Text = ""
 TextButton.Font = Enum.Font.SourceSans
 TextButton.TextSize = 8
