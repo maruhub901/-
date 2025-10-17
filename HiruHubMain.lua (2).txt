@@ -8060,13 +8060,13 @@ Frame.Name = "dut dit"
 
 ImageLabel.Parent = Frame
 ImageLabel.Name = "Andepzai Test"
-ImageLabel.AnchorPoint = Vector3.new(0.5, 0.5)
+ImageLabel.AnchorPoint = Vector2.new(0.5, 0.5)
 ImageLabel.Position = UDim2.new(0.103761353, 0, 0.214939028, 0)
 ImageLabel.Size = UDim2.new(0, 57, 0, 57)
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel.BackgroundTransparency = 0
 ImageLabel.BorderSizePixel = 0
-ImageLabel.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ImageLabel.ImageColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel.Image = "http://www.roblox.com/asset/?id= 122586116993940"
 
@@ -8075,7 +8075,7 @@ UICorner.Parent = Frame
 
 TextButton.Name = "TextButton"
 TextButton.Parent = Frame
-TextButton.AnchorPoint = Vector3.new(0, 0)
+TextButton.AnchorPoint = Vector2.new(0, 0)
 TextButton.Position = UDim2.new(0, 0, 0, 0)
 TextButton.Size = UDim2.new(57, 0, 57, 0)
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
